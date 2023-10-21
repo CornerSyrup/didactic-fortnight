@@ -2,7 +2,12 @@
   "name": "didactic-fortnight",
   "version": "0.1.0",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
+  "scripts": {
+    "debug": "fitbit",
+    "build": "fitbit-build",
+    "build:icon": "magick convert -size 80x80 -background none resources/icon.svg resources/icon.png"
+  },
   "devDependencies": {
     "@fitbit/sdk": "~6.1.0",
     "@fitbit/sdk-cli": "^1.7.3",
@@ -13,7 +18,7 @@
     "appType": "app",
     "appDisplayName": "Didactic Fortnight",
     "iconFile": "resources/icon.png",
-    "wipeColor": "#ffffff",
+    "wipeColor": "#ff3333",
     "requestedPermissions": [],
     "buildTargets": [
       "atlas",
@@ -21,9 +26,5 @@
     ],
     "i18n": {},
     "defaultLanguage": "en-US"
-  },
-  "scripts": {
-    "build": "fitbit-build",
-    "debug": "fitbit"
   }
 }
